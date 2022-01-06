@@ -1,0 +1,234 @@
+.container{
+  width: 100%;
+}
+/* Header Stylings */
+.header{
+    width: 100%;
+    background-color: white;
+    padding: 20px 10px;
+    box-shadow: 2px 2px 5px grey;
+    position: fixed;
+    display: flex;
+    top: 0%;
+}
+.company-logo{
+  width: 50px;
+  height: 50px;
+  margin-left:30px;
+}
+.header a{
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+/* .header-right a:hover{
+  color:red
+}
+.wishlist:hover, .bag:hover{
+  color: red;
+} */
+.header a.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+.header-right {
+    display: flex;
+    margin: auto;
+}
+.header-right a, div{
+    margin-right: 50px;
+}
+.input-icons i {
+    position: absolute;
+}
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+.input-field {
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    border: none;
+}
+.wishlist p{
+    margin: auto;
+}
+.bag p{
+    margin: auto;
+}
+.header-right a:hover{
+  color: red;
+}
+.button {
+  background-color: rgb(114, 114, 230);
+  border: none;
+  color: white;
+  padding: 8px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button:hover {
+    background-color: rgb(65, 65, 218);
+    color: white;
+}
+
+/* Main-body stylings */
+.Main-body{
+  margin-top: 100px;
+}
+.img1 {
+  background-color: rgb(218, 202, 202);
+  width: 100%;
+  height:341px;
+  margin: 0px 10px 20px 20px;
+  display: flex;
+}
+.img1 img{
+  width: 1000px;
+}
+.img1 p{
+  margin: auto;
+  margin-left: 50px;
+  margin-right: 20px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/* Top Brands */
+.Topbrand, .Categories, .menswear{
+  font-size: 40px;
+  margin-left: 20px;
+  font-weight: 500;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.brands{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgb(150, 212, 209);
+  padding: 10px;
+  margin: 0px 20px 20px 20px;
+  cursor: pointer;
+}
+.brands div{
+  display: grid;
+  background-color: linen;
+  padding: 10px;
+  height: 250px;
+}
+.logos{
+  width:50px;
+  height: 30px;
+  margin: auto;
+}
+.brandimage{
+  width:170px;
+  height: 200px;
+  border-radius: 2px;
+}
+
+/* Categories */
+.Categories-container{
+  background-color: rgb(196, 189, 180);
+  width: 100%;
+  padding: 10px;
+  margin: 0px 20px 20px 20px;
+  cursor: pointer;
+}
+.mens-category, .womens-category{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 60px;
+}
+.womens-category{
+  padding-top: 20px;
+}
+.mens-category div, .womens-category div{
+  background-color: rgb(122, 122, 228);
+  background-image: linear-gradient(to right, rgb(152, 152, 204), rgb(245, 214, 157));
+  display: grid;
+  padding: 10px;
+  height: 220px;
+  border-radius: 5px;
+}
+.mens-category img, .womens-category img{
+  width: 160px;
+  height:180px;
+  border-radius: 4px;
+}
+.mens-category p, .womens-category p{
+  margin: auto;
+  font-size: 18px;
+  font-style: oblique;
+}
+.womens-category{
+  display: flex;
+}
+
+/* Mens wear */
+.mens-container{
+  width: 100%;
+  margin: auto
+}
+.mens1, .mens2{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.mens1 div, .mens2 div{
+  display: grid;
+  padding: 10px;
+  margin-left: 20px;
+}
+.mens-container img{
+  width:180px;
+  height: 200px;
+}
+.mens1 h3, .mens2 h3{
+  margin: auto;
+  font-weight: 550;
+  font-size: 18px;
+}
+
+.mens1 p, .mens2 p{
+  margin: auto;
+}
+
+.mens-container button{
+  background-color: white;
+  border:1px solid rgb(187, 184, 184);
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.mens-container button:hover{
+  border: 2px solid black;
+} 
+/* Footer */
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 50px;
+  background-color: rgba(213, 218, 193, 0.753);
+}
+.footer p{
+  font-size: 16px;
+}
+.footer h5{
+  font-size: 18px;
+}
+.copy{
+  text-align: center;
+}
