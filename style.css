@@ -1,3 +1,8 @@
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
 .container{
   width: 100%;
 }
@@ -24,12 +29,10 @@
   font-size: 16px;
   border-radius: 4px;
 }
-/* .header-right a:hover{
-  color:red
+
+.hr{
+  display: none;
 }
-.wishlist:hover, .bag:hover{
-  color: red;
-} */
 .header a.logo {
   font-size: 20px;
   font-weight: bold;
@@ -231,4 +234,480 @@
 }
 .copy{
   text-align: center;
+}
+}
+
+/* phone */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+.header{
+  height: 40px;
+  background-color: white;
+  position: fixed;
+  box-shadow: 2px 2px 5px grey;
+  display: flex;
+  top: 0%;
+  margin-left: -7px;
+}
+  .company-logo{
+    width: 30px;
+    height: 30px;
+    padding: 5px 5px;
+  }
+  .header a.logo {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 2px;
+    text-decoration: none;
+    color: black;
+  }
+  .header-right{
+    display: flex;
+    padding-left: 60px;
+  }
+  .home, .men, .women, .kids{
+    display: none;
+  }
+  .wishlist p, .bag p{
+    display: none;
+  }
+  .input-icons input{
+    display: none;
+  }
+  .hr{
+    display: flex;
+    height: 20px;
+    margin-top: 40px;
+    box-shadow: 2px 2px 5px grey;
+    background-color: rgb(189, 177, 177);
+    position:sticky;
+    top: 40px;
+  }
+  .hr a{
+    margin: auto;
+    text-decoration: none;
+    color: rgb(71, 71, 238);
+  }
+  .hr a:hover{
+    color: red;
+  }
+  .icon{
+    padding: 10px 20px;
+  }
+  .wishlist i, .bag i{
+    padding: 10px 22px;
+  }
+  .button {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin: auto;
+    margin-right: 12px;
+  }
+  .button:hover {
+      background-color: red;
+  }
+  
+  /* Main-body stylings */
+  .Main-body{
+    margin-top: 20px;
+  }
+  .img1 {
+    background-color: rgb(218, 202, 202);
+    height:100px;
+    margin: 0px 10px 10px 10px;
+    display: flex;
+  }
+  .img1 img{
+    width: 250px;
+  }
+  .img1 p{
+    margin: auto;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  /* Top Brands */
+  .Topbrand, .Categories, .menswear{
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .brands{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    background-color: rgb(150, 212, 209);
+    padding: 10px;
+    margin: 0px 10px 10px 10px;
+    cursor: pointer;
+  }
+  .brands div{
+    display: grid;
+    background-color: linen;
+    padding: 10px;
+    height: 120px;
+  }
+  .logos{
+    width:20px;
+    height: 10px;
+    margin: auto;
+  }
+  .brandimage{
+    width: 80px;
+    height: 100px;
+    border-radius: 2px;
+  }
+  .img4, .img5{
+    margin-top: 10px;
+  }
+  
+  /* Categories */
+  .Categories-container{
+    background-color: rgb(196, 189, 180);
+    padding: 10px;
+    margin: 0px 10px 10px 10px;
+    cursor: pointer;
+  }
+  .mens-category, .womens-category{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .womens-category{
+    padding-top: 20px;
+  }
+  .mens-category div, .womens-category div{
+    background-color: rgb(122, 122, 228);
+    background-image: linear-gradient(to right, rgb(152, 152, 204), rgb(245, 214, 157));
+    display: grid;
+    padding: 10px;
+    height: 120px;
+    border-radius: 5px;
+  }
+  .mens-category img, .womens-category img{
+    width: 80px;
+    height: 100px;
+    border-radius: 4px;
+  }
+  .mens-category p, .womens-category p{
+    margin: auto;
+    font-size: 12px;
+    font-style: oblique;
+  }
+  .womens-category{
+    display: flex;
+  }
+  .imgs4, .imgs5, .imgs6, .imgs7{
+    margin-top: 20px;
+  }
+  
+  /* Mens wear */
+  .mens-container{
+    margin: auto
+  }
+  .mens1, .mens2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin: auto;
+  }
+  .mens1 div, .mens2 div{
+    display: grid;
+    padding: 10px;
+    margin: auto;
+  }
+  .mens-container img{
+    width:80px;
+    height: 90px;
+    margin-left: 20px;
+  }
+  .mens1 h3, .mens2 h3{
+    margin: auto;
+    font-weight: 550;
+    font-size: 12px;
+  }
+  
+  .mens1 p, .mens2 p{
+    font-size: 10px;
+    margin: auto;
+  }
+  
+  .mens-container button{
+    background-color: white;
+    border:1px solid rgb(187, 184, 184);
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 2px;
+  }
+  .mens-container button:hover{
+    border: 2px solid black;
+  } 
+  /* Footer */
+  .footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgba(213, 218, 193, 0.753);
+  }
+  .footer p{
+    font-size: 10px;
+  }
+  .footer h5{
+    font-size: 12px;
+  }
+  .copy{
+    text-align: center;
+  }
+
+}
+
+/* Ipad */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+    /* Header Stylings */
+    .header{
+      height: 40px;
+      background-color: white;
+      position: fixed;
+      box-shadow: 2px 2px 5px grey;
+      display: flex;
+      top: 0%;
+      margin-left: -7px;
+    }
+      .company-logo{
+        width: 30px;
+        height: 30px;
+        padding: 5px 5px;
+        padding-left: 50px;
+      }
+      .header a.logo {
+        font-size: 12px;
+        font-weight: bold;
+        padding: 10px 10px;
+        text-decoration: none;
+        color: black;
+      }
+      .header-right{
+        display: flex;
+        padding-left: 200px;
+      }
+      .home, .men, .women, .kids{
+        display: none;
+      }
+      .wishlist p, .bag p{
+        display: none;
+      }
+      /* .input-icons input{
+        display: none;
+      } */
+      .input-icons i {
+        position: absolute;
+    }
+    .icon {
+        padding: 10px;
+        min-width: 40px;
+    }
+    .input-field {
+        padding: 10px;
+        text-align: center;
+        background-color: #f1f1f1;
+        border-radius: 4px;
+        border: none;
+    }
+      .hr{
+        display: flex;
+        height: 20px;
+        margin-top: 40px;
+        box-shadow: 2px 2px 5px grey;
+        background-color: rgb(189, 177, 177);
+        position:sticky;
+        top: 40px;
+      }
+      .hr a{
+        margin: auto;
+        text-decoration: none;
+        color: rgb(71, 71, 238);
+      }
+      .hr a:hover{
+        color: red;
+      }
+      .icon{
+        padding: 10px 20px;
+      }
+      .wishlist i, .bag i{
+        padding: 10px 30px;
+      }
+      .button {
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+        cursor: pointer;
+        margin: auto;
+        margin-right: 12px;
+        margin-left: 5px;
+      }
+      .button:hover {
+          background-color: red;
+      }
+      
+      /* Main-body stylings */
+      .Main-body{
+        margin-top: 20px;
+      }
+      .img1 {
+        background-color: rgb(218, 202, 202);
+        height:200px;
+        margin: 0px 10px 10px 10px;
+        display: flex;
+      }
+      .img1 img{
+        width: 500px;
+      }
+      .img1 p{
+        margin: auto;
+        font-size: 18px;
+        font-weight: 400;
+      }
+      
+      /* Top Brands */
+      .Topbrand, .Categories, .menswear{
+        font-size: 18px;
+        margin-left: 10px;
+        font-weight: 500;
+        font-family:Arial, Helvetica, sans-serif;
+      }
+      .brands{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap:wrap;
+        background-color: rgb(150, 212, 209);
+        padding: 10px;
+        margin: 0px 10px 10px 10px;
+        cursor: pointer;
+      }
+      .brands div{
+        display: grid;
+        background-color: linen;
+        padding: 10px;
+        height: 140px;
+      }
+      .logos{
+        width:30px;
+        height: 20px;
+        margin: auto;
+      }
+      .brandimage{
+        width: 100px;
+        height: 120px;
+        border-radius: 2px;
+      }
+      
+      /* Categories */
+      .Categories-container{
+        background-color: rgb(196, 189, 180);
+        padding: 10px;
+        margin: 0px 10px 10px 10px;
+        cursor: pointer;
+      }
+      .mens-category, .womens-category{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      .womens-category{
+        padding-top: 20px;
+      }
+      .mens-category div, .womens-category div{
+        background-color: rgb(122, 122, 228);
+        background-image: linear-gradient(to right, rgb(152, 152, 204), rgb(245, 214, 157));
+        display: grid;
+        padding: 10px;
+        height: 140px;
+        border-radius: 5px;
+      }
+      .mens-category img, .womens-category img{
+        width: 100px;
+        height: 120px;
+        border-radius: 4px;
+      }
+      .mens-category p, .womens-category p{
+        margin: auto;
+        font-size: 12px;
+        font-style: oblique;
+      }
+      .womens-category{
+        display: flex;
+      }
+      
+      /* Mens wear */
+      .mens-container{
+        margin: auto
+      }
+      .mens1, .mens2{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+      .mens1 div, .mens2 div{
+        display: grid;
+        padding: 20px;
+      }
+      .mens-container img{
+        width:80px;
+        height: 90px;
+      }
+      .mens1 h3, .mens2 h3{
+        margin: auto;
+        font-weight: 550;
+        font-size: 12px;
+      }
+      
+      .mens1 p, .mens2 p{
+        font-size: 10px;
+        margin: auto;
+      }
+      
+      .mens-container button{
+        background-color: white;
+        border:1px solid rgb(187, 184, 184);
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        margin-top: 2px;
+      }
+      .mens-container button:hover{
+        border: 2px solid black;
+      } 
+      /* Footer */
+      .footer{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        background-color: rgba(213, 218, 193, 0.753);
+      }
+      .footer p{
+        font-size: 10px;
+      }
+      .footer h5{
+        font-size: 12px;
+      }
+      .copy{
+        text-align: center;
+      }
 }
